@@ -2,13 +2,13 @@ const questions = [
   {
     question: "Quelle proportion de la nourriture produite dans le monde est gaspillée chaque année ?",
     answers: [
-      { text: "5 %", correct: false },
-      { text: "17 %", correct: false },
-      { text: "33 %", correct: true }
+      { text: "5%", correct: false },
+      { text: "17%", correct: false },
+      { text: "33%", correct: true }
     ]
   },
   {
-    question: "Quel est le poste le plus concerné par le gaspillage alimentaire dans les pays développés ?",
+    question: "Où le gaspillage alimentaire est-il le plus important dans les pays développés ?",
     answers: [
       { text: "Les supermarchés", correct: false },
       { text: "Les restaurants", correct: false },
@@ -16,19 +16,11 @@ const questions = [
     ]
   },
   {
-    question: "Quelle est la différence entre la date de péremption et la date de durabilité minimale (DDM) ?",
+    question: "Que signifie la mention « à consommer de préférence avant le… » ?",
     answers: [
-      { text: "Aucune, elles signifient la même chose", correct: false },
-      { text: "La DDM signifie que le produit est toujours consommable après la date", correct: true },
-      { text: "La date de péremption est moins importante que la DDM", correct: false }
-    ]
-  },
-  {
-    question: "Quel aliment est souvent gaspillé à tort, bien qu'encore consommable après sa DDM ?",
-    answers: [
-      { text: "Le yaourt", correct: true },
-      { text: "Le poisson", correct: false },
-      { text: "La viande hachée", correct: false }
+      { text: "Le produit est périmé", correct: false },
+      { text: "Le produit peut encore être consommé après la date, mais il risque d’avoir perdu un peu de goût ou de texture", correct: true },
+      { text: "Il faut absolument le jeter après la date", correct: false }
     ]
   },
   {
@@ -48,7 +40,7 @@ const questions = [
     ]
   },
   {
-    question: "Quelle appli permet de sauver des invendus alimentaires près de chez soi ?",
+    question: "Quelle application permet de sauver des invendus alimentaires près de chez soi ?",
     answers: [
       { text: "Too Good To Go", correct: true },
       { text: "Clean My Fridge", correct: false },
@@ -64,11 +56,19 @@ const questions = [
     ]
   },
   {
-    question: "En moyenne, combien de kilos de nourriture jette un Français chaque année ?",
+    question: "Quelle quantité de nourriture un Français jette-t-il en moyenne chaque année ?",
     answers: [
       { text: "5 kg", correct: false },
       { text: "29 kg", correct: true },
       { text: "52 kg", correct: false }
+    ]
+  },
+  {
+    question: "Quel aliment est souvent gaspillé à tort, bien qu’encore consommable après sa DDM ?",
+    answers: [
+      { text: "Le yaourt", correct: true },
+      { text: "Le poisson", correct: false },
+      { text: "La viande hachée", correct: false }
     ]
   },
   {
@@ -80,6 +80,7 @@ const questions = [
     ]
   }
 ];
+
 
 const questionContainer = document.getElementById("question-container");
 const answerButtons = document.getElementById("answer-buttons");
@@ -117,7 +118,7 @@ function showQuestion() {
   });
 
   const imageIndex = (currentQuestionIndex + 1).toString().padStart(2, '0');
-  questionImage.src = `images/image${imageIndex}.png`;
+  questionImage.src = `images/easy/image${imageIndex}.png`;
   questionImage.classList.add("hidden");
 }
 

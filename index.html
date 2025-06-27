@@ -1,22 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Quiz Gaspillage Alimentaire</title>
-  <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Choix du mode</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+    button {
+      font-size: 1.2rem;
+      padding: 15px 30px;
+      margin: 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 200px;
+    }
+    button:hover {
+      background-color: #ccc;
+    }
+    #normalBtn {
+      background-color: #4caf50;
+      color: white;
+    }
+    #easyBtn {
+      background-color: #2196f3;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-  <div class="quiz-container">
-    <h1>🥕 Quiz : Lutte contre le gaspillage alimentaire</h1>
-    <div id="question-container"></div>
-    <img id="feedback-image" src="image.jpg" class="hidden" alt="Réponse" />
-    <div id="answer-buttons" class="btn-container"></div>
-    <button id="next-btn">Suivant</button>
-    <div id="score-container" class="hidden">
-      <h2>Ton score : <span id="score"></span></h2>
-    </div>
-  </div>
+  <h1>🌍 Choisissez votre mode</h1>
+  <button id="normalBtn">Mode Normal</button>
+  <button id="easyBtn">Mode Facile</button>
 
-  <script src="scripts/script.js"></script>
+  <script>
+    document.getElementById('normalBtn').addEventListener('click', () => {
+      window.location.href = 'https://florian-huyghe.github.io/Quiz-IA-for-good/normal.html';
+    });
+
+    document.getElementById('easyBtn').addEventListener('click', () => {
+      window.location.href = 'https://florian-huyghe.github.io/Quiz-IA-for-good/easy.html';
+    });
+  </script>
 </body>
 </html>
