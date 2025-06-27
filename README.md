@@ -99,5 +99,3 @@ Distribué sous licence MIT. Voir [`LICENSE`](LICENSE) pour plus de détails.
 * [ ] Animer les images de feedback
 * [ ] Ajouter un bouton "Recommencer"
 * [ ] Stocker le score dans le `localStorage`
-
-```
