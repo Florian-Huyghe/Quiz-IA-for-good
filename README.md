@@ -1,82 +1,113 @@
-```markdown
-# 🌍 Quiz Interactif – Gaspillage Alimentaire
-
-Ce projet est un **quiz interactif** en HTML/CSS/JavaScript visant à sensibiliser les utilisateurs au **gaspillage alimentaire** à travers une série de 10 questions.
+Parfait ! Voici ton `README.md` **prêt à être copié-collé** dans ton dépôt GitHub, avec le lien de démo intégré :
 
 ---
 
-## 📸 Aperçu
+```markdown
+# ♻️ Quiz Interactif – Gaspillage Alimentaire
 
-Chaque question est accompagnée d'une image explicative qui s'affiche après la sélection d'une réponse. Le score final est affiché à la fin du quiz.
+> Un quiz ludique pour sensibiliser au gaspillage alimentaire à travers 10 questions visuelles et interactives.
+
+![status](https://img.shields.io/badge/status-en%20cours-green)
+![tech](https://img.shields.io/badge/Made%20with-JavaScript%20%2F%20HTML%20%2F%20CSS-blue)
+![license](https://img.shields.io/badge/license-MIT-lightgrey)
+
+---
+
+## 🎮 Démo
+
+➡️ **[Voir la démo en ligne](https://florian-huyghe.github.io/Quiz-IA-for-good/)**
 
 ---
 
 ## 🧠 Fonctionnalités
 
-- 10 questions à choix multiple
-- Affichage d'une image après chaque réponse
-- Mise en surbrillance des bonnes/mauvaises réponses
-- Calcul du score final
-- Responsive et simple à utiliser
+- ✅ 10 questions à choix multiples sur le gaspillage alimentaire
+- 📷 Une image de feedback affichée après chaque réponse
+- 🔍 Affichage immédiat des bonnes/mauvaises réponses
+- 🧾 Score final visible à la fin du quiz
+- 📱 Compatible mobile (responsive)
+- 🛠 Facilement modifiable
 
 ---
 
-## 🗂 Structure du projet
+## 🖼️ Aperçu
+
+<img src="images/easy/image01.png" alt="Exemple question" width="60%">
+<em>Image d'exemple affichée après une réponse</em>
+
+---
+
+## 🗂️ Structure du projet
 
 ```
 
-/
-├── index.html
-├── style.css
-├── script.js
+Quiz-IA-for-good/
+├── index.html              # Page principale
+├── style.css               # Feuille de styles
+├── script.js               # Logique du quiz
 ├── images/
 │   └── easy/
 │       ├── image01.png
 │       ├── image02.png
 │       └── ... jusqu'à image10.png
 
-```
+````
 
 ---
 
-## 🚀 Lancer le projet
+## 🚀 Lancer le projet en local
 
-1. **Télécharge** ou **clone** le dépôt.
-2. Ouvre le fichier `index.html` dans ton navigateur.
-3. Réponds aux questions et découvre ton score à la fin.
+1. Clone ce dépôt :
+   ```bash
+   git clone https://github.com/florian-huyghe/Quiz-IA-for-good.git
+   cd Quiz-IA-for-good
+````
 
----
+2. Ouvre `index.html` dans ton navigateur :
 
-## 🧰 Technologies utilisées
-
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
+   * Double-clique sur le fichier `index.html`, ou
+   * Lance-le avec une extension comme *Live Server* dans VS Code.
 
 ---
 
 ## ✏️ Personnalisation
 
-Tu peux facilement :
-- Ajouter ou modifier des questions dans le tableau `questions[]` dans `script.js`
-- Ajouter de nouvelles images dans `/images/easy/`
-- Modifier les styles dans `style.css`
+* Les **questions** peuvent être modifiées dans `script.js`, dans le tableau `questions`.
+* Les **images de feedback** se trouvent dans `/images/easy/` et sont nommées de `image01.png` à `image10.png`.
+* Le style visuel peut être modifié dans `style.css`.
 
 ---
 
-## 🎓 Objectif pédagogique
+## 📚 Objectif pédagogique
 
-Ce quiz a été conçu comme un outil **pédagogique et interactif** pour sensibiliser les jeunes et les adultes aux enjeux du **gaspillage alimentaire**.
+Ce quiz a été conçu dans le cadre d’un projet **éducatif** pour encourager la **réduction du gaspillage alimentaire** à travers l’interactivité et la réflexion.
 
 ---
 
 ## 📄 Licence
 
-Projet open-source à but éducatif. Libre de modification et d’utilisation.
+Distribué sous licence MIT. Voir [`LICENSE`](LICENSE) pour plus de détails.
 
 ---
 
-## 👨‍💻 Auteur
+## 🙋‍♂️ Auteur
 
-Projet réalisé par **Florian Huyghe**, étudiant en cybersécurité.
+**Florian Huyghe**
+Étudiant en cybersécurité passionné par la technologie et l'écologie.
+🔗 [Voir la démo](https://florian-huyghe.github.io/Quiz-IA-for-good/)
+
+---
+
+## 🌟 À faire (TODO)
+
+* [ ] Ajouter un système de chronomètre
+* [ ] Animer les images de feedback
+* [ ] Ajouter un bouton "Recommencer"
+* [ ] Stocker le score dans le `localStorage`
+
+```
+
+---
+
+👉 Tu peux **copier-coller** ce texte tel quel dans ton fichier `README.md`. Si tu veux, je peux aussi te générer le fichier `.md`.
 ```
