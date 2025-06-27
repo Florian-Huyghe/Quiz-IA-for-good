@@ -89,7 +89,7 @@ Distribué sous licence MIT. Voir [`LICENSE`](LICENSE) pour plus de détails.
 ## 🙋‍♂️ Auteur
 
 **Florian Huyghe**
-Étudiant en cybersécurité passionné par la technologie et l'écologie.
+Étudiant en cybersécurité passionné par la technologie.
 🔗 [Voir la démo](https://florian-huyghe.github.io/Quiz-IA-for-good/)
 
 ---
