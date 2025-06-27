@@ -57,7 +57,7 @@ Quiz-IA-for-good/
    ```bash
    git clone https://github.com/florian-huyghe/Quiz-IA-for-good.git
    cd Quiz-IA-for-good
-````
+   ```
 
 2. Ouvre `index.html` dans ton navigateur :
 
