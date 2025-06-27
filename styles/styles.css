@@ -10,6 +10,10 @@ body {
 }
 
 .quiz-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background: #fff;
   border-radius: 8px;
   padding: 30px;

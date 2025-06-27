@@ -119,16 +119,17 @@ function showQuestion() {
   const imageIndex = (currentQuestionIndex + 1).toString().padStart(2, '0');
   questionImage.src = `images/image${imageIndex}.png`;
   questionImage.classList.add("hidden");
+
+  questionContainer.classList.remove("hidden");
+  answerButtons.classList.remove("hidden");
 }
 
 function resetState() {
   nextButton.classList.add("hidden");
   answerButtons.innerHTML = "";
-
-  // Masquer l'image
-  questionImage.classList.remove("hidden");
+  questionContainer.classList.add("hidden");
+  questionImage.classList.add("hidden");
 }
-
 
 function selectAnswer(e) {
   const selectedBtn = e.target;
@@ -145,13 +146,14 @@ function selectAnswer(e) {
     button.disabled = true;
   });
 
-  // Affiche l'image
-  const feedbackImg = document.getElementById("feedback-image");
-  feedbackImg.classList.remove("hidden");
+  // Masquer question et réponses
+  questionContainer.classList.add("hidden");
+
+  // Afficher l'image
+  questionImage.classList.remove("hidden");
 
   nextButton.classList.remove("hidden");
 }
-
 
 nextButton.addEventListener("click", () => {
   currentQuestionIndex++;

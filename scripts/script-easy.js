@@ -81,7 +81,6 @@ const questions = [
   }
 ];
 
-
 const questionContainer = document.getElementById("question-container");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
@@ -120,23 +119,23 @@ function showQuestion() {
   const imageIndex = (currentQuestionIndex + 1).toString().padStart(2, '0');
   questionImage.src = `images/easy/image${imageIndex}.png`;
   questionImage.classList.add("hidden");
+
+  questionContainer.classList.remove("hidden");
+  answerButtons.classList.remove("hidden");
 }
 
 function resetState() {
   nextButton.classList.add("hidden");
   answerButtons.innerHTML = "";
-
-  // Masquer l'image
-  questionImage.classList.remove("hidden");
+  questionContainer.classList.add("hidden");
+  questionImage.classList.add("hidden");
 }
-
 
 function selectAnswer(e) {
   const selectedBtn = e.target;
   const correct = selectedBtn.dataset.correct === "true";
   if (correct) score++;
 
-  // Affichage des couleurs
   Array.from(answerButtons.children).forEach(button => {
     if (button.dataset.correct === "true") {
       button.style.backgroundColor = "#66bb6a";
@@ -146,13 +145,14 @@ function selectAnswer(e) {
     button.disabled = true;
   });
 
-  // Affiche l'image
-  const feedbackImg = document.getElementById("feedback-image");
-  feedbackImg.classList.remove("hidden");
+  // Masquer question + réponses
+  questionContainer.classList.add("hidden");
+
+  // Afficher l’image
+  questionImage.classList.remove("hidden");
 
   nextButton.classList.remove("hidden");
 }
-
 
 nextButton.addEventListener("click", () => {
   currentQuestionIndex++;
