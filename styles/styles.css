@@ -52,14 +52,11 @@ button:hover {
   margin-top: 20px;
   display: block;
 }
+
 #feedback-image {
   width: 100%;
   max-width: 300px;
   margin-top: 20px;
-}
-
-.hidden {
-  display: none;
 }
 
 /* Sur les écrans plus petits (ex: smartphones) */
@@ -76,7 +73,6 @@ button:hover {
     font-size: 1.2em;
   }
 
-  /* Agrandir les boutons, images, etc. */
   button {
     padding: 15px 25px;
     font-size: 18px;
@@ -86,5 +82,9 @@ button:hover {
     max-width: 100%;
     height: auto;
   }
-}
 
+  .quiz-container {
+    max-width: none; /* supprime la limite max-width */
+    width: 80%;      /* largeur à 80% sur mobile */
+  }
+}
