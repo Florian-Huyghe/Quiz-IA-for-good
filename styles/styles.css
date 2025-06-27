@@ -1,5 +1,6 @@
 body {
   font-family: 'Segoe UI', sans-serif;
+  font-size: 1.4rem;
   background-color: #e6f5ec;
   margin: 0;
   padding: 0;
@@ -60,3 +61,30 @@ button:hover {
 .hidden {
   display: none;
 }
+
+/* Sur les écrans plus petits (ex: smartphones) */
+@media (max-width: 600px) {
+  body {
+    font-size: 20px;  /* augmente la taille du texte */
+  }
+
+  h1 {
+    font-size: 2.5em; /* titres plus gros */
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  /* Agrandir les boutons, images, etc. */
+  button {
+    padding: 15px 25px;
+    font-size: 18px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
