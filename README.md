@@ -1,8 +1,4 @@
-Parfait ! Voici ton `README.md` **prêt à être copié-collé** dans ton dépôt GitHub, avec le lien de démo intégré :
 
----
-
-```markdown
 # ♻️ Quiz Interactif – Gaspillage Alimentaire
 
 > Un quiz ludique pour sensibiliser au gaspillage alimentaire à travers 10 questions visuelles et interactives.
@@ -51,7 +47,7 @@ Quiz-IA-for-good/
 │       ├── image02.png
 │       └── ... jusqu'à image10.png
 
-````
+
 
 ---
 
@@ -105,9 +101,4 @@ Distribué sous licence MIT. Voir [`LICENSE`](LICENSE) pour plus de détails.
 * [ ] Ajouter un bouton "Recommencer"
 * [ ] Stocker le score dans le `localStorage`
 
-```
-
----
-
-👉 Tu peux **copier-coller** ce texte tel quel dans ton fichier `README.md`. Si tu veux, je peux aussi te générer le fichier `.md`.
 ```
